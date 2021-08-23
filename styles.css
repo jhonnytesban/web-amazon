@@ -1,0 +1,38 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem 2rem;
+  background-color: royalblue;
+}
+.logo{
+  width: 10rem;
+}
+.nav--active{
+  width: 100%;
+  height: 100%;
+  background-color: slategray;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  transition: left .5s;
+}
+.nav--deactive{
+  width: 100%;
+  height: 100%;
+  background-color: slategray;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  transition: left .5s;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.close{
+  position: relative;
+  left: 85%;
+  top: 4%;
+}

@@ -5,17 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aspiradoras online | El mejor sitio para encontrar tu aspiradora</title>
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="header">
-    <img src="" alt="Aspiradoras">
-    <nav class="nav">
+    <img class="logo" src="./assets/logo.png" alt="Aspiradoras">
+    <img class="menu" src="./assets/menu.svg" alt="Menu" id="btn-menu">
+    <nav class="nav--deactive" id="nav">
+      <img class="close" src="./assets/close.svg" alt="Menu" id="btn-close">
       <ul class="menu">
-        <li class="menu__item">Modelos</li>
+        <li class="menu__item">Modelos
+          <ul>
+            <li>Robots aspiradores</li>
+            <li>Aspiradoras de mano</li>
+            <li>Aspiradoras escoba</li>
+            <li>Aspiradoras en seco y húmedo</li>
+            <li>Aspiradoras verticales</li>
+          </ul>
+        </li>
         <li class="menu__item">Marcas</li>
       </ul>
     </nav>
   </header>
+  <script src="./index.js"></script>
 </body>
 </html>
