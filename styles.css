@@ -8,7 +8,7 @@
   align-items: center;
   position: fixed;
   padding: 1rem 2rem;
-  background-color: royalblue;
+  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   box-sizing: border-box;
 }
 .logo{
@@ -74,14 +74,45 @@
 /* BreakPoints */
 
 @media screen and (min-width: 900px) {
+  .header{
+    position: relative;
+  }
   .nav--deactive{
     width: auto;
-    background-color: royalblue;
+    background-color: rgba(65, 105, 225, 0);
     position: static;
   }
   .menu{
     flex-direction: row;
     padding: 0;
+  }
+  .menu__models--deactive{
+    text-align: center;
+    position: absolute;
+    right: 15%;
+    top: 35%;
+  }
+  .menu__models--deactive:hover{
+    text-align: center;
+    cursor: pointer;
+    height: 8rem;
+    position: absolute;
+  }
+  .menu__marcas--deactive{
+    text-align: center;
+    position: absolute;
+    right: 5%;
+    top: 35%;
+  }
+  .menu__marcas--deactive:hover{
+    text-align: center;
+    cursor: pointer;
+    height: 10rem;
+    position: absolute;
+  }
+  .submenu{
+    text-align: left;
+    padding-left: 3rem;
   }
   .menu-img{
     position: absolute;
