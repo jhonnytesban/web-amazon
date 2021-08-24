@@ -1,9 +1,15 @@
+:root{
+  --font-roboto: 'Roboto', sans-serif;
+}
 .header{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .5rem 2rem;
+  position: fixed;
+  padding: 1rem 2rem;
   background-color: royalblue;
+  box-sizing: border-box;
 }
 .logo{
   width: 10rem;
@@ -27,12 +33,62 @@
   transition: left .5s;
 }
 .menu{
+  background-color: royalblue;
   display: flex;
   flex-direction: column;
+  font-family: var(--font-roboto);
   list-style: none;
+  margin-left: 25%;
+  padding: 1rem;
+}
+.menu__models--deactive{
+  height: 1rem;
+  overflow: hidden;
+  transition: height .5s;
+}
+.menu__models--active{
+  height: 7rem;
+  overflow: hidden;
+  transition: height .5s;
+}
+.menu__marcas--deactive{
+  height: 1rem;
+  overflow: hidden;
+  transition: height .5s;
+}
+.menu__marcas--active{
+  height: 9rem;
+  overflow: hidden;
+  transition: height .5s;
 }
 .close{
   position: relative;
   left: 85%;
-  top: 4%;
+  top: 3%;
+}
+.submenu{
+  list-style: none;
+  padding: 0;
+}
+
+/* BreakPoints */
+
+@media screen and (min-width: 900px) {
+  .nav--deactive{
+    width: auto;
+    background-color: royalblue;
+    position: static;
+  }
+  .menu{
+    flex-direction: row;
+    padding: 0;
+  }
+  .menu-img{
+    position: absolute;
+    top: -50%;
+  }
+  .close{
+    position: absolute;
+    top: -50%;
+  }
 }
