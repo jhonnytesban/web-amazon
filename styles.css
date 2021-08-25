@@ -95,7 +95,7 @@
   .menu__models--deactive:hover{
     text-align: center;
     cursor: pointer;
-    height: 8rem;
+    height: 18rem;
     position: absolute;
   }
   .menu__marcas--deactive{
@@ -107,12 +107,20 @@
   .menu__marcas--deactive:hover{
     text-align: center;
     cursor: pointer;
-    height: 10rem;
+    height: 22rem;
     position: absolute;
   }
   .submenu{
     text-align: left;
-    padding-left: 3rem;
+    background-color: #c2e9fb;
+    margin-top: 23px;
+  }
+  .submenu__item{
+    padding: .8rem 3rem;
+  }
+  .submenu__item:hover{
+    background-color: #64ceff;
+
   }
   .menu-img{
     position: absolute;
