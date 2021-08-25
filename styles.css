@@ -1,5 +1,6 @@
 :root{
   --font-roboto: 'Roboto', sans-serif;
+  --font-quicksand: 'Quicksand', sans-serif;
 }
 .header{
   width: 100%;
@@ -77,12 +78,21 @@
 }
 .title{
   font-family: var(--font-roboto);
+  font-size: 2.4rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
+.container{
+  margin-bottom: 4rem;
+}
 .container__text{
-  font-family: var(--font-roboto);
+  font-family: var(--font-quicksand);
   line-height: 1.4rem;
+  font-size: 1.2rem;
+}
+.section__subtitle{
+  font-family: var(--font-roboto);
+  font-size: 2.2rem;
 }
 
 /* BreakPoints */
