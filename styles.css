@@ -8,7 +8,7 @@
   align-items: center;
   position: fixed;
   padding: 1rem 2rem;
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  background-image: linear-gradient(120deg, #7eb0ff 0%, #b1e6ff 100%);
   box-sizing: border-box;
 }
 .logo{
@@ -71,11 +71,21 @@
   padding: 0;
 }
 
+/* Main */
+.main{
+  padding: 4rem 1.5rem;
+}
+.title{
+  font-family: var(--font-roboto);
+  text-align: center;
+}
+
 /* BreakPoints */
 
 @media screen and (min-width: 900px) {
   .header{
     position: relative;
+    padding: 1rem 10rem;
   }
   .nav--deactive{
     width: auto;
@@ -89,7 +99,7 @@
   .menu__models--deactive{
     text-align: center;
     position: absolute;
-    right: 15%;
+    right: 20%;
     top: 35%;
   }
   .menu__models--deactive:hover{
@@ -101,7 +111,7 @@
   .menu__marcas--deactive{
     text-align: center;
     position: absolute;
-    right: 5%;
+    right: 10%;
     top: 35%;
   }
   .menu__marcas--deactive:hover{
@@ -129,5 +139,10 @@
   .close{
     position: absolute;
     top: -50%;
+  }
+
+  /* Main */
+  .main{
+    padding-top: 0;
   }
 }
