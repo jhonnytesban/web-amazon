@@ -229,6 +229,7 @@
     text-align: left;
     background-color: #c2e9fb;
     margin-top: 23px;
+    box-shadow: 20px 0 2px 2px gray;
   }
   .submenu__item{
     padding: .8rem 3rem;
