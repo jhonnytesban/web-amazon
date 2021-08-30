@@ -118,15 +118,41 @@
   top: 0;
   left: 0;
 }
+
 .img__subtitle{
   font-family: var(--font-roboto);
   font-size: 1.5rem;
   text-align: center;
   color: #fff;
   position: absolute;
-  bottom: 0;
+  /* bottom: 0; */
   top: 30%;
   z-index: 100;
+}
+
+.section-models__text{
+  font-family: var(--font-quicksand);
+  line-height: 1.4rem;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+.footer{
+  border-top: 1px solid rgb(190, 190, 190);
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+.footer-list{
+  list-style: none;
+  padding: 0;
+}
+.footer-list__item{
+  margin: 1rem;
+}
+.footer__link{
+  text-decoration: none;
+  font-family: var(--font-quicksand);
+  color: black;
 }
 
 /* BreakPoints */
@@ -213,8 +239,17 @@
     height: 300px;
     margin: 0;
   }
-  .img__link:hover{
-    color: blue;
-    z-index: 1000;
+  .img__link:hover::after{
+    content: "";
+    background: linear-gradient(to bottom,transparent 0%,rgb(58, 67, 197) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  /* Footer */
+  .footer{
+    padding: 1rem 4rem;
   }
 }
